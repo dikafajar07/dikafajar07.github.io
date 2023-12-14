@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wira Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="asset/Nadhif Basalamah Penjaga Hati Official Vidio Lirik.mp3" type="audio/mpeg">
+    </audio>
+    <section id="hero" class="hero" w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center
+        align-items-center>
+        <main>
+            <h1 id="txt1" class="animate_animated animate__fadeInUp"><b>The Wedding Of</b></h1>
+            <img class="flower4 animate__animated animate__headShake" src="asset/Flower 4.png" alt="Flower">
+            <div>
+                <img class="profile-img" src="asset/Photo Profil.png" alt="foto pengantin">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 id="txt2">Mustika <br> & Wira</h2>
+                        <h2 id="txt3">25 | 05 | 2022</h2>
+                        <p>di mohon kehadirannya</p>
+                    </div>
+                </div>
+            </div>
+            <img class="leaf-1 animate__animated animate__heartBeat" src="asset/Leaf 1.png" alt="">
+            <img class="leaf-2 animate__animated animate__heartBeat" src="asset/Leaf 2.png" alt="">
+            <img class="flower-1 animate__animated animate__headShake" src="asset/Flower 1.png" alt="flower1">
+            <img class="flower-3 animate__animated animate__slideInLeft infinite" src="asset/Flower 3.png" alt="">
+        </main>
+    </section>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2><i>Assalamu'alaikum Wr. Wb.</i></h2>
+                    <p>Tanpa mengurangi rasa hormat, kami mengundang
+                        <br> Bapak/Ibu/Saudara/i pada acara pernikahan kami
+                    </p>
+                </div>
+                <div class="col-md-8 text-center bride">
+                    <img class="daun-1 animate__animated animate__bounce" src="asset/Leaf 1.png" alt="">
+                    <h1>Mustika</h1>
+                    <p>Putri dari Bapak Winarno & Ibu Julaikah</p>
+                    <h1>&</h1>
+                    <h1>Wira</h1>
+                    <p>Putri dari Bapak Winarno & Ibu Julaikah</p>
+                    <img class="daun-2 animate__animated animate__bounce" src="asset/Leaf 2.png" alt="">
+                </div>
+                <div class="col-md-8 text-center surah">
+                    <h2><i>QS. Ar-Rum Ayat 21</i></h2>
+                    <p>Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia
+                        <br>menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri
+                        <br>agar kamu merasa tenteram kepadanya. Dan dia
+                        menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada
+                        yang demikian itu benar-benar terdapat tanda-tanda (kebesaran
+                        Allah) bagi kaum yang berpikir.
+                    </p>
+                </div>
+                <div class="col-md-8 text-center footer">
+                    <img class="flower-2 animate_animated animate_bounce" src="asset/Flower 2.png" alt="flower 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+    <script>
+        // $(function () {
+        //     $("h1").lettering();
+        // });
+        const text = document.getElementById('txt1');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+        const ele = document.querySelectorAll('span');
+        for (var i = 0; i < ele.length; i++) {
+            ele[i].style.transform = "rotate(" + i * 15 + "deg)";
+        }
+    </script>
+</body>
+
+</html>
